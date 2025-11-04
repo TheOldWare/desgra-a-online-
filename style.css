@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace; /* Fonte com estilo nerd/tech */
+  background: radial-gradient(circle at 30% 30%, rgba(0, 0, 10, 0.6), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(0, 0, 20, 0.4), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(0, 0, 50, 0.5), transparent 50%),
+              linear-gradient(135deg, rgba(1, 1, 20, 1), rgba(1, 1, 20, 1));
+    background-attachment: fixed;
+    background-attachment: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background: rgba(100, 5, 1, 0.2);
+    padding: 0.1rem;
+    border-radius: 16px;
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    animation: darkRedBorderLoop 1.5s infinite;
+}
+@keyframes darkRedBorderLoop {
+  0% { border-color: rgba(139, 0, 0, 0.9); } /* Vermelho escuro (DarkRed) */
+  25% { border-color: rgba(178, 34, 34, 0.9); } /* Vermelho tijolo (FireBrick) */
+  50% { border-color: rgba(205, 0, 0, 0.9); } /* Vermelho sangue (Crimson) */
+  75% { border-color: rgba(178, 34, 34, 0.9); } /* Retorna ao vermelho tijolo */
+  100% { border-color: rgba(139, 0, 0, 0.9); } /* Volta ao vermelho escuro */
+}
+
+.titulo{
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.github{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 50px;
+    padding: 10px;
+    filter: invert(100%);
+}
+
+.icons-acess{
+  display: flex; /* Usa Flexbox para organizar ícones */
+  flex-wrap: wrap; /* Permite rearranjo em telas menores */
+  justify-content: center; /* Centraliza ícones horizontalmente */
+  gap: 2rem; /* Espaçamento uniforme entre ícones */
+  margin: 2rem auto; /* Centraliza com margens */
+  max-width: 100px; /* Limita largura em telas grandes */
+}
+
+.photo{
+    width: 100%; /* Ocupa toda a largura do .icon-link */
+  height: 100%; /* Ocupa toda a altura do .icon-link */
+  filter: invert(90%) blur(1px); /* Efeito inicial com blur */
+  cursor: pointer; /* Mostra que é clicável */
+  transition: filter 0.5s ease, transform 0.5s ease; /* Transições suaves */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.photo:hover{
+    filter: invert(90%) blur(0); /* Remove blur no hover */
+  transform: scale(1.2); /* Aumenta o ícone para destaque */
+}
