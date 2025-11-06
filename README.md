@@ -1,2 +1,3 @@
 # desgraça online
-tipo assim, fdskkk a Livia que mandou kkkk
+![1000228605](https://github.com/user-attachments/assets/085b93c0-e100-41cc-ad59-c016094a55c2)
+
