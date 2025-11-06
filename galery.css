@@ -30,7 +30,7 @@ body{
   width: 100%;
     height: auto;
     object-fit: cover;
-    max-width: 100px;
+    max-width: 50px;
     transition: transform 0.5s ease, filter 1s ease;
     filter: blur(1px);
     z-index: 0;
