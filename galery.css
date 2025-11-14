@@ -26,7 +26,8 @@ body{
   max-width: 1200px;
 }
 
-.ofim{
+.ofim,
+.tuebuxa{
   width: 100%;
     height: auto;
     object-fit: cover;
@@ -36,7 +37,8 @@ body{
     z-index: 0;
 }
 
-.ofim:hover{
+.ofim:hover,
+.tuebuxa:hover{
   z-index: 1;
 transform: scale(1.0);
 filter: blur(0px);
